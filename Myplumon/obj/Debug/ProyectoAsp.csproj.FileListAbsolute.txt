@@ -1,0 +1,6 @@
+C:\Users\rolandoantonio\documents\visual studio 2010\Projects\ProyectoAsp\ProyectoAsp\bin\ProyectoAsp.dll
+C:\Users\rolandoantonio\documents\visual studio 2010\Projects\ProyectoAsp\ProyectoAsp\bin\ProyectoAsp.pdb
+C:\Users\rolandoantonio\documents\visual studio 2010\Projects\ProyectoAsp\ProyectoAsp\bin\MySql.Data.dll
+C:\Users\rolandoantonio\documents\visual studio 2010\Projects\ProyectoAsp\ProyectoAsp\obj\Debug\ProyectoAsp.dll
+C:\Users\rolandoantonio\documents\visual studio 2010\Projects\ProyectoAsp\ProyectoAsp\obj\Debug\ProyectoAsp.pdb
+C:\Users\rolandoantonio\documents\visual studio 2010\Projects\ProyectoAsp\ProyectoAsp\obj\Debug\ProyectoAsp.csprojResolveAssemblyReference.cache

@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login_out.Master.cs" Inherits="ProyectoAsp.SiteMaster" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+	<title>Login ...</title>
+	
+	<!-- agregando estilos -->
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' />
+	<link rel="stylesheet" href="~/Styles/style.css" />
+
+	<!-- optimizacion version movil -->
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+
+</head>
+
+<body>
+    <form runat="server">
+
+
+   
+	<div id="top-bar">
+		
+		<div class="page-full-width">
+		
+			<a href="Login.aspx" class="round button dark ic-left-arrow image-left ">Inicio</a>&nbsp;
+            <a href="Acerca.aspx" class="round button dark ic-left-arrow image-left ">Acerca de la plataforma</a>
+            <a href="Registro.aspx" class="round button dark ic-left-arrow image-left ">Registrate</a>&nbsp;&nbsp;
+            <br />
+          </div>
+	 </div>
+
+	
+	
+	
+	<!-- CABECERA INICIO -->
+	<div id="header" align="center">
+		
+		<div class="page-full-width cf" align="center">
+	
+            <!-- login-intro -->
+
+              <div class="main">
+			    
+               <asp:Image ID="Image1" ImageUrl="../images/logo1.png" runat="server" 
+                      EnableViewState="true" Height="62px" />
+                
+				  <br />
+                  <br />
+                  <br />
+                  <br />
+                
+				<h1>Plataforma Estudiantil</h1>
+				<h5>No es una copia , solo la mejoramos </h5>
+			
+             </div>
+			
+		</div> <!-- FIN ANCHO INTRO -->	
+
+	</div> <!-- FIN CABECERA -->
+
+    
+        <div class="main">
+   
+  
+    <div id="footer">
+        <p align="center">
+        <p align="center">
+        <p align="center">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+          
+            <p>
+                <br />
+            </p>
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
+            <p>
+            </p>
+          
+      </asp:ContentPlaceHolder>
+         </div>
+        <p align="center">&nbsp;<p align="center">&copy; Copyright 2013 <a href="#">Wildsoft inc.</a>. Todos los derechos reservados.</div>
+    </form>
+</body>
+</html>

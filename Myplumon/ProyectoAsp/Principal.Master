@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="ProyectoAsp.Principal" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- agregando estilos -->
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' />
+	<link rel="stylesheet" href="~/Styles/style.css" />
+
+	<!-- optimizacion version movil -->
+
+	<!-- Optimize for mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<!-- jQuery & JS files -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="~/Scripts/script.js"></script>  
+
+    <script src="http://www.zurb.com/javascripts/plugins/jquery.textchange.min.js" type="text/javascript"></script>
+    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <div id="fb-root"></div>
+<script>    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=142489082613367";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));</script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#txtcorreo').bind('textchange', function (event, previousText) {
+                //Aqui obligo a que valla al servidor a ejecutar el evento asociado al TextBox
+                __doPostBack('txtcorreo', '');
+
+            });
+        });
+
+</script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+	<!-- TOP BAR -->
+	<div id="top-bar">
+		
+		<div class="page-full-width cf" >
+
+			<ul id="nav" class="fl" >
+
+	            <li class="v-sep">
+                    <asp:Image runat="server" ID="ImgUser" Width="50" Height ="50" ImageUrl="" 
+                        BorderStyle="Dotted" BorderColor="#996633" BorderWidth="2px" />
+                </li>
+				<li class="v-sep"><a href="index.aspx" class="round button dark ">
+                    <img src="/images/icons/menu/tab-dashboard.png" alt="" style="left:auto ; width:20px; height:20px" /> Principal</a>
+                </li>
+				<li class="v-sep"><a href="#" class="round button dark ">
+                    <img src="/images/icons/menu/menu-user.png" alt="" style="left:auto ; width:20px ; height:20px" /> Usuario 
+                    <strong id="Nombre" >
+                    <asp:Label Text="" ID="lblNombreUsuario" Enabled="true" runat ="server" ></asp:Label>
+                    
+                    </strong>
+                 </a>
+					<ul>
+						<li><a id="A1" runat="server"  href="perfil.aspx">Mi perfil</a></li>
+                        <li><a id="A2" runat="server"  href="perfil_edit.aspx">Editar Perfil</a></li>
+					</ul> 
+				</li>
+			
+				<li class="v-sep"><a href="#" class="round button dark " runat="server" id="link_mensaje" >
+                    <img alt="" src="/images/icons/menu/menu-email-special.png" style="left:auto ; width:20px; height:20px" id="img_mensaje" /><b id="lblmensajes" runat="server" > Mensajes del tutor</b></a>
+                    </li>
+				<li><a href="sesion.aspx" class="round button dark ">
+                    <img src="/images/icons/menu/menu-logoff.png" alt="" style="left:auto ; width:20px ; height:20px" ; /> Cerrar Sesion</a></li>
+				
+			</ul> <!-- end nav -->
+            </div>
+            </div>
+
+            <div id="header-with-tabs">
+		<div class="page-limited cf">
+	
+			<ul id="tabs" class="fl">
+                <li><a runat="server" href="index.aspx" class="active-tab" id="A3" ><asp:Label runat="server" ID="lbltab0" Text="Pagina de Inicio" ></asp:Label></a></li>
+				<li><a runat="server" href="#" class="active-tab" id="t1" ><asp:Label runat="server" ID="lbltab1" Text="Mis cursos" ></asp:Label></a></li>
+				<li><a runat="server" href="#" class="dashboard-tab" id="t2"><asp:Label runat="server" ID="Lbltab2" Text="Otros cursos" ></asp:Label></a></li>
+				<li><a runat="server" href="#" class="dashboard-tab" id="t3" ><asp:Label runat="server" ID="lbltab3" Text="Cursos cerrados" ></asp:Label></a></li>
+			</ul> <!-- end tabs -->
+			
+
+			<a href="#" id="company-branding-small" class="fr"><img src="/images/logo1.png" alt="my plumon" /></a>
+			
+		</div> <!-- end full-width -->	
+
+	</div> <!-- end header -->
+    <p></p>
+           <p>
+               &nbsp;</p>
+           <div class="main">
+            <asp:ContentPlaceHolder ID="ContenidoPrincipal" runat="server">
+                <p>
+                    &nbsp;</p>
+               </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+</body>
+</html>

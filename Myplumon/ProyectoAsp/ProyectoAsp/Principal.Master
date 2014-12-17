@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="ProyectoAsp.Principal" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- agregando estilos -->
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' />
+    <link rel="stylesheet" href="~/Styles/style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+	
+	<!-- TOP BAR -->
+	<div id="top-bar">
+		
+		<div class="page-full-width cf" >
+
+			<ul id="nav" class="fl" >
+
+	            <li class="v-sep">
+                    <asp:Image runat="server" ID="ImgUser" Width="50" Height ="50" />
+                </li>
+				<li class="v-sep"><a href="index.aspx" class="round button dark ">
+                    <img src="/images/icons/menu/tab-dashboard.png" alt="" style="left" /> Principal</a>
+                </li>
+				<li class="v-sep"><a href="#" class="round button dark ">
+                    <img src="/images/icons/menu/menu-user.png" alt="" style="left" /> Usuario 
+                    <strong id="Nombre" >
+                    <asp:Label Text="" ID="lblNombreUsuario" Enabled="true" runat ="server" ></asp:Label>
+                    
+                    </strong>
+                 </a>
+					<ul>
+						<li><a runat="server"  href="#">Mi perfil</a></li>
+						<li><a runat="server"  href="#">Mensajes</a><asp:Label runat="server" ID="lblcontmensaje" ></asp:Label></li>
+						
+					</ul> 
+				</li>
+			
+				<li class="v-sep"><a href="#" class="round button dark menu-email-special image-left">variable mensajeria</a></li>
+				<li><a href="#" class="round button dark "><img src="/images/icons/menu/menu-logoff.png" alt="" style="left" /> Cerrar Sesion</a></li>
+				
+			</ul> <!-- end nav -->
+            </div>
+            </div>
+
+            <div id="header-with-tabs">
+		<div class="page-full-width cf">
+	
+			<ul id="tabs" class="fl">
+ 
+				<li><a runat="server" href="#" class="active-tab" id="t1" ><asp:Label runat="server" ID="lbltab1" Text="Mis cursos" ></asp:Label></a></li>
+				<li><a runat="server" href="#" class="dashboard-tab" id="t2"><asp:Label runat="server" ID="Lbltab2" Text="Otros cursos" ></asp:Label></a></li>
+				<li><a runat="server" href="#" class="dashboard-tab" id="t3" ><asp:Label runat="server" ID="lbltab3" Text="Cursos cerrados" ></asp:Label></a></li>
+			</ul> <!-- end tabs -->
+			
+
+			<a href="#" id="company-branding-small" class="fr"><img src="/images/logo1.png" alt="My pizarron 2" /></a>
+			
+		</div> <!-- end full-width -->	
+
+	</div> <!-- end header -->
+    <p></p>
+           <p>
+               &nbsp;</p>
+           <div class="main">
+            <asp:ContentPlaceHolder ID="ContenidoPrincipal" runat="server">
+                <p>
+                    &nbsp;</p>
+               </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+</body>
+</html>
+
+
+ 

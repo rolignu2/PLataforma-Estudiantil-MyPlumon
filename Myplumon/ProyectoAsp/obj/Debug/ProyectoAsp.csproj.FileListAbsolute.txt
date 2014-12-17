@@ -1,0 +1,18 @@
+C:\Users\rolandoantonio\documents\visual studio 2010\Projects\ProyectoAsp\ProyectoAsp\bin\ProyectoAsp.dll
+C:\Users\rolandoantonio\documents\visual studio 2010\Projects\ProyectoAsp\ProyectoAsp\bin\ProyectoAsp.pdb
+C:\Users\rolandoantonio\documents\visual studio 2010\Projects\ProyectoAsp\ProyectoAsp\bin\MySql.Data.dll
+C:\Users\rolandoantonio\documents\visual studio 2010\Projects\ProyectoAsp\ProyectoAsp\obj\Debug\ProyectoAsp.dll
+C:\Users\rolandoantonio\documents\visual studio 2010\Projects\ProyectoAsp\ProyectoAsp\obj\Debug\ProyectoAsp.pdb
+C:\Users\rolandoantonio\Desktop\recursos asp\ProyectoAsp\ProyectoAsp\bin\ProyectoAsp.dll
+C:\Users\rolandoantonio\Desktop\recursos asp\ProyectoAsp\ProyectoAsp\bin\ProyectoAsp.pdb
+C:\Users\rolandoantonio\Desktop\recursos asp\ProyectoAsp\ProyectoAsp\bin\MySql.Data.dll
+C:\Users\rolandoantonio\Desktop\recursos asp\ProyectoAsp\ProyectoAsp\obj\Debug\ProyectoAsp.csprojResolveAssemblyReference.cache
+C:\Users\rolandoantonio\Desktop\recursos asp\ProyectoAsp\ProyectoAsp\obj\Debug\ProyectoAsp.dll
+C:\Users\rolandoantonio\Desktop\recursos asp\ProyectoAsp\ProyectoAsp\obj\Debug\ProyectoAsp.pdb
+C:\Users\rolandoantonio\documents\visual studio 2010\Projects\ProyectoAsp\ProyectoAsp\obj\Debug\ProyectoAsp.csprojResolveAssemblyReference.cache
+F:\wildsof inc programas\proyecto asp copia n4\ProyectoAsp\ProyectoAsp\bin\ProyectoAsp.dll
+F:\wildsof inc programas\proyecto asp copia n4\ProyectoAsp\ProyectoAsp\bin\ProyectoAsp.pdb
+F:\wildsof inc programas\proyecto asp copia n4\ProyectoAsp\ProyectoAsp\bin\MySql.Data.dll
+F:\wildsof inc programas\proyecto asp copia n4\ProyectoAsp\ProyectoAsp\obj\Debug\ProyectoAsp.csprojResolveAssemblyReference.cache
+F:\wildsof inc programas\proyecto asp copia n4\ProyectoAsp\ProyectoAsp\obj\Debug\ProyectoAsp.dll
+F:\wildsof inc programas\proyecto asp copia n4\ProyectoAsp\ProyectoAsp\obj\Debug\ProyectoAsp.pdb
